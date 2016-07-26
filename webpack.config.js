@@ -5,10 +5,20 @@ module.exports = {
   entry: './index.js',
   output: {
     path: __dirname + '/dist',
-    filename: 'react-leaflet-fullscreen.js',
+    filename: 'index.js',
+    library: 'FullscreenControl',
+    libraryTarget: 'umd'
   },
   plugins: [
-    new ExtractTextPlugin('react-leaflet-fullscreen.css')
+    new ExtractTextPlugin('index.css')
+  ],
+  externals: [
+    {
+      react: 'react',
+      'react-leaflet': 'react-leaflet',
+      'react-dom': 'react-dom',
+      'leaflet': 'leaflet',
+    },
   ],
   module: {
     loaders: [
