@@ -1,6 +1,6 @@
 {
   "name": "react-leaflet-fullscreen",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Fullscreen control for react-leaflet",
   "main": "lib/index.js",
   "scripts": {
@@ -12,9 +12,9 @@
     "leaflet",
     "fullscreen"
   ],
-  "repository" : { 
-    "type" : "git", 
-    "url" : "https://github.com/krvital/react-leaflet-fullscreen"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/krvital/react-leaflet-fullscreen"
   },
   "author": "Vital Kr <kr.vital@gmail.com> (http://krvital.pro/)",
   "license": "MIT",
