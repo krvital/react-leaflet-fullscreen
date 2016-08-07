@@ -3,7 +3,7 @@ based on https://github.com/brunob/leaflet.fullscreen
 
 ### Usage
 ```js
-import 'react-leaflet-fullscreen/lib/index.css'
+import 'react-leaflet-fullscreen/dist/styles.css'
 import { Map } from 'react-leaflet';
 import FullscreenControl from 'react-leaflet-fullscreen';
 
