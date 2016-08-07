@@ -10,11 +10,11 @@ module.exports = {
     libraryTarget: 'umd'
   },
   plugins: [
-    new ExtractTextPlugin('index.css')
+    new ExtractTextPlugin('styles.css')
   ],
   externals: [
     {
-      react: 'react',
+      'react': 'react',
       'react-leaflet': 'react-leaflet',
       'react-dom': 'react-dom',
       'leaflet': 'leaflet',

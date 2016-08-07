@@ -1,6 +1,7 @@
+require('./node_modules/leaflet.fullscreen/Control.FullScreen.css');
+const fullscreen = require('exports?L.control.fullscreen!leaflet.fullscreen');
 import { PropTypes } from 'react';
 import { MapControl } from 'react-leaflet';
-const fullscreen = require('exports?L.control.fullscreen!leaflet.fullscreen');
 
 class FullscreenControl extends MapControl {
   componentWillMount() {
