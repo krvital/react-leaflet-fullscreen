@@ -2,7 +2,7 @@
   "name": "react-leaflet-fullscreen",
   "version": "0.0.4",
   "description": "Fullscreen control for react-leaflet",
-  "main": "lib/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
