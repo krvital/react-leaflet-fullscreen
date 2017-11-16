@@ -94,16 +94,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	  return FullscreenControl;
 	}(_reactLeaflet.MapControl);
 
-	FullscreenControl.propTypes = {
-	  position: _react.PropTypes.string,
-	  title: _react.PropTypes.string,
-	  titleCancel: _react.PropTypes.string,
-	  content: _react.PropTypes.node,
-	  forceSeparateButton: _react.PropTypes.bool,
-	  forcePseudoFullscreen: _react.PropTypes.bool,
-	  fullscreenElement: _react.PropTypes.bool
-	};
-
 	exports.default = FullscreenControl;
 
 /***/ },
