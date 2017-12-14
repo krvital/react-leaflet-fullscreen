@@ -1,6 +1,6 @@
 {
   "name": "react-leaflet-fullscreen",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "Fullscreen control for react-leaflet",
   "main": "dist/index.js",
   "scripts": {
@@ -19,12 +19,13 @@
   "author": "Vital Kr <kr.vital@gmail.com> (http://krvital.pro/)",
   "license": "MIT",
   "peerDependencies": {
-    "react": "^15.2.x",
-    "react-dom": "^15.2.x",
-    "react-leaflet": "^0.12.x"
+    "react": "^15.2.x || ^16.x",
+    "react-dom": "^15.2.x || ^16.x",
+    "react-leaflet": "^0.12.x || ^1.x",
+    "prop-types": "^15.6.x"
   },
   "dependencies": {
-    "leaflet.fullscreen": "^1.4.x"
+    "leaflet.fullscreen": "^1.4.x",
   },
   "devDependencies": {
     "babel-cli": "^6.11.4",
