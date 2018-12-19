@@ -15,7 +15,7 @@ import FullscreenControl from 'react-leaflet-fullscreen';
 
 ### propTypes
 ```
-position: 'topleft' | 'topleft' | 'bottomright' | 'bottomleft'
+position: 'topleft' | 'topright' | 'bottomright' | 'bottomleft'
 title: String, // title of the button, default Full Screen
 titleCancel: String // title of the button when fullscreen is on, default Exit Full Screen
 content: null | HTMLElement // content of the button, can be HTML, default null
