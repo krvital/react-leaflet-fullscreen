@@ -23,8 +23,7 @@
   },
   "dependencies": {
     "leaflet.fullscreen": "1.4.5",
-    "prop-types": "^15.6.x",
-    "react-leaflet": "^2.1.3"
+    "prop-types": "^15.6.x"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
