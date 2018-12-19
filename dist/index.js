@@ -87,9 +87,9 @@ function (_MapControl) {
   }
 
   _createClass(FullscreenControl, [{
-    key: "componentWillMount",
-    value: function componentWillMount() {
-      this.leafletElement = L.control.fullscreen(this.props);
+    key: "createLeafletElement",
+    value: function createLeafletElement(props) {
+      return L.control.fullscreen(props);
     }
   }]);
 
@@ -105,5 +105,6 @@ FullscreenControl.propTypes = {
   forcePseudoFullscreen: PropTypes.bool,
   fullscreenElement: PropTypes.bool
 };
+var index = reactLeaflet.withLeaflet(FullscreenControl);
 
-module.exports = FullscreenControl;
+module.exports = index;

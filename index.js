@@ -1,10 +1,10 @@
-import PropTypes from 'prop-types'
-import { MapControl } from 'react-leaflet'
-import 'leaflet.fullscreen'
+import PropTypes from 'prop-types';
+import { MapControl, withLeaflet } from 'react-leaflet';
+import 'leaflet.fullscreen';
 
 class FullscreenControl extends MapControl {
-  componentWillMount() {
-    this.leafletElement = L.control.fullscreen(this.props)
+  createLeafletElement(props) {
+    return L.control.fullscreen(props);
   }
 }
 
@@ -16,6 +16,6 @@ FullscreenControl.propTypes = {
   forceSeparateButton: PropTypes.bool,
   forcePseudoFullscreen: PropTypes.bool,
   fullscreenElement: PropTypes.bool
-}
+};
 
-export default FullscreenControl
+export default withLeaflet(FullscreenControl);

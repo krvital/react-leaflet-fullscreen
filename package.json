@@ -19,11 +19,12 @@
   "author": "Vital Kr <kr.vital@gmail.com> (http://krvital.pro/)",
   "license": "MIT",
   "peerDependencies": {
-    "react-leaflet": "^0.12.x || ^1.x"
+    "react-leaflet": "^2.x"
   },
   "dependencies": {
+    "leaflet.fullscreen": "1.4.5",
     "prop-types": "^15.6.x",
-    "leaflet.fullscreen": "1.4.5"
+    "react-leaflet": "^2.1.3"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
