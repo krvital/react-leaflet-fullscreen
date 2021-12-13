@@ -22,8 +22,8 @@
     "react-leaflet": "^3.x"
   },
   "dependencies": {
-    "@react-leaflet/core": "^1.1.1",
-    "leaflet.fullscreen": "1.4.5"
+    "@react-leaflet/core": "1.1.1",
+    "leaflet.fullscreen": "1.6.0"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
