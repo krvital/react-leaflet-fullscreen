@@ -1,5 +1,7 @@
 # FullscreenControl for react-leaflet 
-Based on https://github.com/brunob/leaflet.fullscreen
+It is the easiest way to add fullscreen control to your [react-leaflet](https://react-leaflet.js.org/) map. There is no fullscreen control in the standard set of leaflet controls, so here it is.
+
+![image](https://github.com/krvital/react-leaflet-fullscreen/assets/811386/278384cf-d891-421e-822c-823d6db2d378)
 
 ### Usage example
 ```js
@@ -11,8 +13,8 @@ import "react-leaflet-fullscreen/dist/styles.css";
 
 const App = () => {
   return (
-    <div id="map">
-      <MapContainer center={[54.989, 73.369]} zoom={12} scrollWheelZoom={false}>
+    <div id="app">
+      <MapContainer center={[54.989, 73.369]} zoom={12} scrollWheelZoom={false} id="map">
         <TileLayer
           attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -28,12 +30,24 @@ render(<App />, document.getElementById("root"));
 
 
 ### Component props
-```
+Since it's based on [leaflet.fullscreen](https://github.com/brunob/leaflet.fullscreen) the properties set is just passed in leaflet.fullscreen as is.
+
+```jsx
+// Position of the element. Default value is "topleft"
 position: 'topleft' | 'topright' | 'bottomright' | 'bottomleft'
-title: string, // title of the button, default Full Screen
-titleCancel: string // title of the button when fullscreen is on, default Exit Full Screen
-content: null | HTMLElement // content of the button, can be HTML, default null
-forceSeparateButton: boolean, // force seperate button to detach from zoom buttons, default false
-forcePseudoFullscreen: boolean, // force use of pseudo full screen even if full screen API is available, default false
-fullscreenElement: boolean // Dom element to render in full screen, false by default, fallback to map._container
+
+// Title of the button. Default value is "Full Screen"
+title: string,
+
+// Title of the button when fullscreen is on. Default value is "Exit Full Screen"
+titleCancel: string 
+
+// Content of the button. Default values is null
+content: null | HTMLElement 
+
+// Force seperate button to detach from zoom buttons. Default value if false
+forceSeparateButton: boolean, 
+
+// force use of pseudo full screen even if full screen API is available. Default value is false
+forcePseudoFullscreen: boolean,
 ```
