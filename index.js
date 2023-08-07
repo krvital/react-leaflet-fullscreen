@@ -1,6 +1,12 @@
-import { createControlComponent } from '@react-leaflet/core';
-import 'leaflet.fullscreen';
+'use strict';
 
-const FullscreenControl = createControlComponent(props => L.control.fullscreen(props))
+Object.defineProperty(exports, '__esModule', { value: true });
 
-export { FullscreenControl }
+var core = require('@react-leaflet/core');
+require('leaflet.fullscreen');
+
+var FullscreenControl = core.createControlComponent(function (props) {
+  return L.control.fullscreen(props);
+});
+
+exports.FullscreenControl = FullscreenControl;

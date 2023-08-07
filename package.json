@@ -1,12 +1,8 @@
 {
   "name": "react-leaflet-fullscreen",
-  "version": "2.0.2",
+  "version": "4.0.0",
   "description": "Fullscreen control for react-leaflet",
-  "main": "dist/index.js",
-  "scripts": {
-    "build": "npx rollup -c rollup.config.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "index.js",
   "keywords": [
     "react",
     "leaflet",
@@ -16,19 +12,13 @@
     "type": "git",
     "url": "https://github.com/krvital/react-leaflet-fullscreen"
   },
-  "author": "Vital Kr <kr.vital@gmail.com> (http://krvital.pro/)",
+  "author": "Vitaly Kravtsov <mail@krvital.pro> (https://krvital.pro/)",
   "license": "MIT",
   "peerDependencies": {
-    "react-leaflet": "^3.x"
+    "react-leaflet": "^4.x"
   },
   "dependencies": {
-    "@react-leaflet/core": "1.1.1",
-    "leaflet.fullscreen": "1.6.0"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/preset-env": "^7.2.0",
-    "rollup": "^0.68.0",
-    "rollup-plugin-babel": "^4.1.0"
+    "@react-leaflet/core": "2.1.0",
+    "leaflet.fullscreen": "2.4.0"
   }
 }
