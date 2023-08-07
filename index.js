@@ -1,6 +1,21 @@
-import { createControlComponent } from '@react-leaflet/core';
-import 'leaflet.fullscreen';
+import L from 'leaflet';
+import "leaflet.fullscreen"
+import { useRef, useEffect } from "react";
+import { useMap } from "react-leaflet";
 
-const FullscreenControl = createControlComponent(props => L.control.fullscreen(props))
+export function FullscreenControl(props) {
+    const map = useMap();
+    const ctrl = useRef(L.control.fullscreen(props));
 
-export { FullscreenControl }
+    useEffect(() => {
+        ctrl.current.addTo(map);
+
+        return () => {
+            ctrl.current.remove();
+            ctrl.current.link.remove();
+        };
+    });
+
+    return null;
+}
+
