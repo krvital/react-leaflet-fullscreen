@@ -1,12 +1,20 @@
-'use strict';
+import L from 'leaflet';
+import "leaflet.fullscreen"
+import { useRef, useEffect } from "react";
+import { useMap } from "react-leaflet";
 
-Object.defineProperty(exports, '__esModule', { value: true });
+export function FullscreenControl(props) {
+    const map = useMap();
+    const ctrl = useRef(L.control.fullscreen(props));
 
-var core = require('@react-leaflet/core');
-require('leaflet.fullscreen');
+    useEffect(() => {
+        ctrl.current.addTo(map);
 
-var FullscreenControl = core.createControlComponent(function (props) {
-  return L.control.fullscreen(props);
-});
+        return () => {
+            ctrl.current.link.remove();
+        };
+    });
 
-exports.FullscreenControl = FullscreenControl;
+    return null;
+}
+
