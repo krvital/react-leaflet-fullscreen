@@ -1,6 +1,6 @@
 {
   "name": "react-leaflet-fullscreen",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Fullscreen control for react-leaflet",
   "main": "dist.js",
   "scripts": {
@@ -21,7 +21,6 @@
     "react-leaflet": "^4.x"
   },
   "dependencies": {
-    "@react-leaflet/core": "2.1.0",
     "leaflet.fullscreen": "2.4.0"
   }
 }
