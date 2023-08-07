@@ -11,6 +11,7 @@ export function FullscreenControl(props) {
         ctrl.current.addTo(map);
 
         return () => {
+            ctrl.current.remove();
             ctrl.current.link.remove();
         };
     });

@@ -2,7 +2,10 @@
   "name": "react-leaflet-fullscreen",
   "version": "4.0.0",
   "description": "Fullscreen control for react-leaflet",
-  "main": "index.js",
+  "main": "dist.js",
+  "scripts": {
+    "build": "npx rollup index.js --file dist.js --format cjs"
+  },
   "keywords": [
     "react",
     "leaflet",
