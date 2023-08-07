@@ -3,13 +3,16 @@ It is the easiest way to add fullscreen control to your [react-leaflet](https://
 
 ![image](https://github.com/krvital/react-leaflet-fullscreen/assets/811386/278384cf-d891-421e-822c-823d6db2d378)
 
+### Live demo
+Here is the [live demo](https://codesandbox.io/s/react-leaflet-fullscreen-v4-74kd9d) 
+
 ### Usage example
 ```js
 import React from "react";
 import { render } from "react-dom";
 import { MapContainer, TileLayer } from "react-leaflet";
 import { FullscreenControl } from "react-leaflet-fullscreen";
-import "react-leaflet-fullscreen/dist/styles.css";
+import "react-leaflet-fullscreen/styles.css";
 
 const App = () => {
   return (
@@ -27,7 +30,6 @@ const App = () => {
 
 render(<App />, document.getElementById("root"));
 ```
-
 
 ### Component props
 Since it's based on [leaflet.fullscreen](https://github.com/brunob/leaflet.fullscreen) the properties set is just passed in leaflet.fullscreen as is.
